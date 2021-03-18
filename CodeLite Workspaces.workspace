@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="CodeLite Workspaces" Database="" Version="10000">
+  <Project Name="A2_E1_Classes" Path="Assignment_2/Assignment_2.project" Active="No"/>
+  <Project Name="A2_E2_Classes" Path="Assignment_2_Excercise_2/Assignment_2_Excercise_2.project" Active="No"/>
+  <Project Name="A3_E1_Container_Class" Path="A3_E1_Container_Class/A3_E1_Container_Class.project" Active="No"/>
+  <Project Name="A0" Path="A0/A0.project" Active="No"/>
+  <Project Name="A3_E2_Container_Class" Path="A3_E2_Container_Class/A3_E2_Container_Class.project" Active="No"/>
+  <Project Name="A4_Dynamic_Arrays" Path="A4_Dynamic_Arrays/A4_Dynamic_Arrays.project" Active="No"/>
+  <Project Name="friendtest" Path="friendtest/friendtest.project" Active="No"/>
+  <Project Name="A5_E1_Linked_Lists" Path="A5_Linked_Lists/A5_Linked_Lists.project" Active="No"/>
+  <Project Name="Bag3" Path="Bag3/Bag3.project" Active="No"/>
+  <Project Name="A5_E2_Linked_Lists" Path="A5_E2_Linked_Lists/A5_E2_Linked_Lists.project" Active="No"/>
+  <Project Name="A6_Stacks" Path="A6_Stacks/A6_Stacks.project" Active="No"/>
+  <Project Name="A7_Queues" Path="A7_Queues/A7_Queues.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="Temperature" ConfigName="Debug"/>
+      <Project Name="A0" ConfigName="Debug"/>
+      <Project Name="A2_E1_Classes" ConfigName="Debug"/>
+      <Project Name="A2_E2_Classes" ConfigName="Debug"/>
+      <Project Name="A3_E2_Container_Class" ConfigName="Debug"/>
+      <Project Name="A3_E1_Container_Class" ConfigName="Debug"/>
+      <Project Name="A3_E2_Container_Class" ConfigName="Debug"/>
+      <Project Name="A0" ConfigName="Debug"/>
+      <Project Name="A0" ConfigName="Debug"/>
+      <Project Name="A3_E2_Container_Class" ConfigName="Debug"/>
+      <Project Name="A3_E2_Container_Class_V2" ConfigName="Debug"/>
+      <Project Name="A4_Dynamic_Arrays" ConfigName="Debug"/>
+      <Project Name="friendtest" ConfigName="Debug"/>
+      <Project Name="A5_E1_Linked_Lists" ConfigName="Debug"/>
+      <Project Name="Bag3" ConfigName="Debug"/>
+      <Project Name="A5_E2_Linked_Lists" ConfigName="Debug"/>
+      <Project Name="A6_Stacks" ConfigName="Debug"/>
+      <Project Name="A7_Queues" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="Temperature" ConfigName="Release"/>
+      <Project Name="A0" ConfigName="Release"/>
+      <Project Name="A2_E1_Classes" ConfigName="Release"/>
+      <Project Name="A2_E2_Classes" ConfigName="Release"/>
+      <Project Name="A3_E2_Container_Class" ConfigName="Release"/>
+      <Project Name="A3_E1_Container_Class" ConfigName="Release"/>
+      <Project Name="A3_E2_Container_Class" ConfigName="Release"/>
+      <Project Name="A0" ConfigName="Release"/>
+      <Project Name="A0" ConfigName="Release"/>
+      <Project Name="A3_E2_Container_Class" ConfigName="Release"/>
+      <Project Name="A3_E2_Container_Class_V2" ConfigName="Release"/>
+      <Project Name="A4_Dynamic_Arrays" ConfigName="Release"/>
+      <Project Name="friendtest" ConfigName="Release"/>
+      <Project Name="A5_E1_Linked_Lists" ConfigName="Release"/>
+      <Project Name="Bag3" ConfigName="Release"/>
+      <Project Name="A5_E2_Linked_Lists" ConfigName="Release"/>
+      <Project Name="A6_Stacks" ConfigName="Release"/>
+      <Project Name="A7_Queues" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
