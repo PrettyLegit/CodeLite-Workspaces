@@ -11,7 +11,10 @@
   <Project Name="Bag3" Path="Bag3/Bag3.project" Active="No"/>
   <Project Name="A5_E2_Linked_Lists" Path="A5_E2_Linked_Lists/A5_E2_Linked_Lists.project" Active="No"/>
   <Project Name="A6_Stacks" Path="A6_Stacks/A6_Stacks.project" Active="No"/>
-  <Project Name="A7_Queues" Path="A7_Queues/A7_Queues.project" Active="Yes"/>
+  <Project Name="A7_Queues" Path="A7_Queues/A7_Queues.project" Active="No"/>
+  <Project Name="A8_E1_Recursion" Path="A8_E1_Recursion/A8_E1_Recursion.project" Active="Yes"/>
+  <Project Name="A8_E2_Recursion" Path="A8_E2_Recursion/A8_E2_Recursion.project" Active="No"/>
+  <Project Name="A8_E3_Recursion" Path="A8_E3_Recursion/A8_E3_Recursion.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -33,6 +36,9 @@
       <Project Name="A5_E2_Linked_Lists" ConfigName="Debug"/>
       <Project Name="A6_Stacks" ConfigName="Debug"/>
       <Project Name="A7_Queues" ConfigName="Debug"/>
+      <Project Name="A8_E1_Recursion" ConfigName="Debug"/>
+      <Project Name="A8_E2_Recursion" ConfigName="Debug"/>
+      <Project Name="A8_E3_Recursion" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -54,6 +60,9 @@
       <Project Name="A5_E2_Linked_Lists" ConfigName="Release"/>
       <Project Name="A6_Stacks" ConfigName="Release"/>
       <Project Name="A7_Queues" ConfigName="Release"/>
+      <Project Name="A8_E1_Recursion" ConfigName="Release"/>
+      <Project Name="A8_E2_Recursion" ConfigName="Release"/>
+      <Project Name="A8_E3_Recursion" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
