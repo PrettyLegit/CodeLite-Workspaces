@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=A5_E2_Linked_Lists
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A5_E2_Linked_Lists"
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A5_E2_Linked_Lists"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=06/03/2021
+Date                   :=20/03/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,13 +95,13 @@ PreBuild:
 ##
 $(IntermediateDirectory)/node1_New.cpp$(ObjectSuffix): node1_New.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/node1_New.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/node1_New.cpp$(DependSuffix) -MM node1_New.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A5_E2_Linked_Lists/node1_New.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/node1_New.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A5_E2_Linked_Lists/node1_New.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/node1_New.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/node1_New.cpp$(PreprocessSuffix): node1_New.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/node1_New.cpp$(PreprocessSuffix) node1_New.cpp
 
 $(IntermediateDirectory)/node1_New_Test.cpp$(ObjectSuffix): node1_New_Test.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/node1_New_Test.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/node1_New_Test.cpp$(DependSuffix) -MM node1_New_Test.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A5_E2_Linked_Lists/node1_New_Test.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/node1_New_Test.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A5_E2_Linked_Lists/node1_New_Test.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/node1_New_Test.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/node1_New_Test.cpp$(PreprocessSuffix): node1_New_Test.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/node1_New_Test.cpp$(PreprocessSuffix) node1_New_Test.cpp
 
