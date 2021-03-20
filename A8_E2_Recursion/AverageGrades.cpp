@@ -20,8 +20,8 @@ int main(int argc, char** argv)
 {
     int* class_size_ptr = new int[1];
 
-    int input_size = 0;
-    int input_grades = 0;
+    int input_size = -1;
+    int input_grades = -1;
     char command;
     double average = 0.00;
 
@@ -30,19 +30,43 @@ int main(int argc, char** argv)
 	print_menu();
 	command = get_command();
 	if(command == '1') {
-	    cout << "Enter in an integer for the class size" << endl;
-	    cin >> input_size;
-	    class_size_ptr = new int[input_size];
+
+		//we have to reset value here
+		input_size = -1;
+		class_size_ptr = new int[1];
+		
+	    while(input_size < 0) {
+		cout << "Enter in an integer for the class size" << endl;
+		cin.clear();
+		cin >> input_size;
+		if(input_size > 0) {
+		    class_size_ptr = new int[input_size];
+		} else {
+		    cout << "\n\n---Enter integer greater than 0---\n\n" << endl;
+		    
+		}
+	    }
 	}
 	if(command == '2') {
 
 	    for(int i = 0; i < input_size; i++) {
-		cout << "Enter in data for position: " << i << endl;
-		cin >> input_grades;
-		class_size_ptr[i] = input_grades;
+
+		while(input_grades < 0) {
+		    cout << "Enter in data for position: " << i << endl;
+		    cin >> input_grades;
+		    if(input_grades <= 100 && input_grades >= 0) {
+			class_size_ptr[i] = input_grades;
+		    } else {
+			cout << "Check your inputs, and try again" << endl;
+		    }
+		}
+		/*NOTE: we have to reset input_number back to -1
+		 * so the while loop can validate next input*/
+		input_grades = -1;
 	    }
 	}
 	if(command == '3') {
+		average = 0;
 	    average = findAverage(class_size_ptr, input_size, 0, average);
 
 	    cout << "You entered class size: " << input_size << endl;
@@ -51,9 +75,8 @@ int main(int argc, char** argv)
 		cout << class_size_ptr[i] << " ";
 	    }
 	    cout << endl;
-		printf("class average:          %.2f\n", average);
+	    printf("class average:          %.2f\n", average);
 	}
-
     } while(command != '4');
 
     return 0;

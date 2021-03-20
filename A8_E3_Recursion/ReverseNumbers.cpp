@@ -21,7 +21,7 @@ int main(int argc, char** argv)
 {
     int ARRAY_SIZE = 5;
     int* numbers = new int[ARRAY_SIZE];
-	int* temp = new int[ARRAY_SIZE];
+    int* temp = new int[ARRAY_SIZE];
 
     char command;
     int input_number = -1;
@@ -60,10 +60,10 @@ int main(int argc, char** argv)
 
 	    /*NOTE: We have to do ARRAY_SIZE-1 because the size is 5 but index is 4*/
 	    reverse(numbers, temp, 0, ARRAY_SIZE);
-	    cout << "Entered numbers after reversal: ";
-	    for(int i = 0; i < ARRAY_SIZE; i++) {
-		cout << numbers[i] << "  ";
-	    }
+//	    cout << "Entered numbers after reversal: ";
+//	    for(int i = 0; i < ARRAY_SIZE; i++) {
+//		cout << numbers[i] << "  ";
+//	    }
 
 	    cout << endl;
 	}
@@ -94,30 +94,37 @@ char get_command()
 
 void reverse(int* numbers, int* temp, int index, int ARRAY_SIZE)
 {
-	
+
     int digit_reverse = 0;
     int data = 0;
     int remainder = 0;
 
     if(index <= ARRAY_SIZE) {
-		
-	    data = numbers[index];
 
-	    while(data != 0) {
+	data = numbers[index];
 
-		remainder = data % 10;
+	while(data != 0) {
 
-		digit_reverse = ((digit_reverse * 10) + remainder);
+	    remainder = data % 10;
 
-		data /= 10;
-	    }
+	    digit_reverse = ((digit_reverse * 10) + remainder);
 
-	    temp[index] = digit_reverse;
-		
-		return reverse(numbers, temp, ++index, ARRAY_SIZE);
-}
-	//Note: 5 < 5 terminate
-   for(int i = 0; i < ARRAY_SIZE; i++){
-	   numbers[i] = temp[i];
-   }
+	    data /= 10;
+	}
+
+	temp[index] = digit_reverse;
+
+	return reverse(numbers, temp, ++index, ARRAY_SIZE);
+    }
+    // Note: 5 < 5 terminate
+    //   for(int i = 0; i < ARRAY_SIZE; i++){
+    //	   numbers[i] = temp[i];
+    //   }
+
+    cout << "Entered numbers after reversal: ";
+    for(int i = 0; i < ARRAY_SIZE; i++) {
+	cout << temp[i] << "  ";
+    }
+
+    cout << endl;
 }

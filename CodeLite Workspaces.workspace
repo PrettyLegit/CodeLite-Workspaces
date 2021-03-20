@@ -13,8 +13,8 @@
   <Project Name="A6_Stacks" Path="A6_Stacks/A6_Stacks.project" Active="No"/>
   <Project Name="A7_Queues" Path="A7_Queues/A7_Queues.project" Active="No"/>
   <Project Name="A8_E1_Recursion" Path="A8_E1_Recursion/A8_E1_Recursion.project" Active="No"/>
-  <Project Name="A8_E2_Recursion" Path="A8_E2_Recursion/A8_E2_Recursion.project" Active="Yes"/>
-  <Project Name="A8_E3_Recursion" Path="A8_E3_Recursion/A8_E3_Recursion.project" Active="No"/>
+  <Project Name="A8_E2_Recursion" Path="A8_E2_Recursion/A8_E2_Recursion.project" Active="No"/>
+  <Project Name="A8_E3_Recursion" Path="A8_E3_Recursion/A8_E3_Recursion.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
