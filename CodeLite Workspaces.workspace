@@ -14,7 +14,10 @@
   <Project Name="A7_Queues" Path="A7_Queues/A7_Queues.project" Active="No"/>
   <Project Name="A8_E1_Recursion" Path="A8_E1_Recursion/A8_E1_Recursion.project" Active="No"/>
   <Project Name="A8_E2_Recursion" Path="A8_E2_Recursion/A8_E2_Recursion.project" Active="No"/>
-  <Project Name="A8_E3_Recursion" Path="A8_E3_Recursion/A8_E3_Recursion.project" Active="Yes"/>
+  <Project Name="A8_E3_Recursion" Path="A8_E3_Recursion/A8_E3_Recursion.project" Active="No"/>
+  <Project Name="A9_Part0_Trees" Path="A9_Part0_Trees/A9_Part0_Trees.project" Active="No"/>
+  <Project Name="A9_Part1_Trees" Path="A9_Part1_Trees/A9_Part1_Trees.project" Active="Yes"/>
+  <Project Name="A9_Part2_Trees" Path="A9_Part2_Trees/A9_Part2_Trees.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -39,6 +42,9 @@
       <Project Name="A8_E1_Recursion" ConfigName="Debug"/>
       <Project Name="A8_E2_Recursion" ConfigName="Debug"/>
       <Project Name="A8_E3_Recursion" ConfigName="Debug"/>
+      <Project Name="A9_Part0_Trees" ConfigName="Debug"/>
+      <Project Name="A9_Part1_Trees" ConfigName="Debug"/>
+      <Project Name="A9_Part2_Trees" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -63,6 +69,9 @@
       <Project Name="A8_E1_Recursion" ConfigName="Release"/>
       <Project Name="A8_E2_Recursion" ConfigName="Release"/>
       <Project Name="A8_E3_Recursion" ConfigName="Release"/>
+      <Project Name="A9_Part0_Trees" ConfigName="Release"/>
+      <Project Name="A9_Part1_Trees" ConfigName="Release"/>
+      <Project Name="A9_Part2_Trees" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>

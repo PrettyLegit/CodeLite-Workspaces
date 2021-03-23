@@ -1,8 +1,8 @@
 .PHONY: clean All
 
 All:
-	@echo "----------Building project:[ A8_E3_Recursion - Debug ]----------"
-	@cd "A8_E3_Recursion" && "$(MAKE)" -f  "A8_E3_Recursion.mk"
+	@echo "----------Building project:[ A9_Part0_Trees - Debug ]----------"
+	@cd "A9_Part0_Trees" && "$(MAKE)" -f  "A9_Part0_Trees.mk"
 clean:
-	@echo "----------Cleaning project:[ A8_E3_Recursion - Debug ]----------"
-	@cd "A8_E3_Recursion" && "$(MAKE)" -f  "A8_E3_Recursion.mk" clean
+	@echo "----------Cleaning project:[ A9_Part0_Trees - Debug ]----------"
+	@cd "A9_Part0_Trees" && "$(MAKE)" -f  "A9_Part0_Trees.mk" clean
