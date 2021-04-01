@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=A9_Part0_Trees
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A9_Part0_Trees"
+WorkspacePath          :=C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces
+ProjectPath            :=C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces/A9_Part0_Trees
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=31/03/2021
+Date                   :=01/04/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/testBST.cpp$(ObjectSuffix): testBST.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/testBST.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/testBST.cpp$(DependSuffix) -MM testBST.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A9_Part0_Trees/testBST.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/testBST.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces/A9_Part0_Trees/testBST.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/testBST.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/testBST.cpp$(PreprocessSuffix): testBST.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/testBST.cpp$(PreprocessSuffix) testBST.cpp
 

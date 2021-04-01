@@ -28,6 +28,7 @@ int main() {
     }
 
 	//let's print the tree
+	cout<< "Look here" <<endl;
 	cout << endl << intBST << endl << endl;
 	
 	//let's see the tree shape
@@ -52,7 +53,6 @@ int main() {
     cout << bst << endl << endl;
     
     bst.insert("arthur");
-	
 	//let's see the tree shape
     print(bst.get_root(), 0);
     cout<<endl;
