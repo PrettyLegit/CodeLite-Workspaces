@@ -99,4 +99,6 @@
     <File Name="bintree.h"/>
     <File Name="bst.template"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

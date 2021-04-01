@@ -97,4 +97,6 @@
     <File Name="node1_New.h"/>
     <File Name="node1_New.cpp"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

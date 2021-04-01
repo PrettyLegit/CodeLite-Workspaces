@@ -97,4 +97,6 @@
     <File Name="polytest1.cpp"/>
     <File Name="poly1.h"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

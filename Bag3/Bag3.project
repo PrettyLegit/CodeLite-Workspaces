@@ -97,4 +97,6 @@
     <File Name="bag3.h"/>
     <File Name="bag3.cpp"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>

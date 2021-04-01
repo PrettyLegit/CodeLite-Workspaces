@@ -95,4 +95,6 @@
   <VirtualDirectory Name="src">
     <File Name="test_stack.cpp"/>
   </VirtualDirectory>
+  <Dependencies Name="Debug"/>
+  <Dependencies Name="Release"/>
 </CodeLite_Project>
