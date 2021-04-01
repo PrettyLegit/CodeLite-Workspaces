@@ -93,6 +93,10 @@
     </Configuration>
   </Settings>
   <VirtualDirectory Name="src">
-    <File Name="myTestBST.pp"/>
+    <File Name="myTestBST.cpp"/>
+    <File Name="bintree.template"/>
+    <File Name="bst.h"/>
+    <File Name="bintree.h"/>
+    <File Name="bst.template"/>
   </VirtualDirectory>
 </CodeLite_Project>
