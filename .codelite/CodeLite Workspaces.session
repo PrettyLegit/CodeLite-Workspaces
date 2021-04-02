@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\CodeLite Workspaces.workspace">
-  <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\CodeLite Workspaces.workspace" Name="m_workspaceName"/>
+<Session Name="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace">
+  <int Value="3" Name="m_selectedTab"/>
+  <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\A9_Part1_Trees\bintree.h" Name="FileName"/>
-      <int Value="141" Name="FirstVisibleLine"/>
-      <int Value="158" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part0_Trees\bintree.h" Name="FileName"/>
+      <int Value="92" Name="FirstVisibleLine"/>
+      <int Value="115" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\A9_Part1_Trees\bintree.template" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
-      <int Value="2" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\A9_Part1_Trees\bst.h" Name="FileName"/>
-      <int Value="66" Name="FirstVisibleLine"/>
-      <int Value="0" Name="CurrentLine"/>
-      <wxArrayString Name="Bookmarks"/>
-      <IntVector Name="CollapsedFolds"/>
-    </TabInfo>
-    <TabInfo>
-      <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\A9_Part1_Trees\bst.template" Name="FileName"/>
+      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part0_Trees\bintree.template" Name="FileName"/>
       <int Value="0" Name="FirstVisibleLine"/>
       <int Value="0" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
-      <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\A9_Part0_Trees\testBST.cpp" Name="FileName"/>
-      <int Value="62" Name="FirstVisibleLine"/>
-      <int Value="75" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part0_Trees\bst.h" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="0" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part0_Trees\bst.template" Name="FileName"/>
+      <int Value="51" Name="FirstVisibleLine"/>
+      <int Value="59" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part1_Trees\myTestBST.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="24" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -53,10 +53,10 @@
       <bool Value="0" Name="regex"/>
       <bool Value="0" Name="is_temp"/>
       <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
+      <long Value="0" Name="ignore_number"/>
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
   </SerializedObject>
-  <wxString Value="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.inc;*.mm;*.m;*.xrc;*.plist;*.txt" Name="m_findInFilesMask"/>
+  <wxString Value="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.inc;*.mm;*.m;*.xrc;*.xml;*.json;*.sql;*.txt;*.plist;CMakeLists.txt;*.rc;*.iss" Name="m_findInFilesMask"/>
 </Session>

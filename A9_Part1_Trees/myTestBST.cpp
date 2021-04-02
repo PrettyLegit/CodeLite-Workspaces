@@ -18,3 +18,11 @@ int main(){
 	
 	return EXIT_SUCCESS;
 }
+
+/*
+ * make an array with all those words
+ * needs to be recursive 
+ * 
+ * 
+ * */
+
