@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=A3_E2_Container_Class
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A3_E2_Container_Class"
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A3_E2_Container_Class"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=06/03/2021
+Date                   :=04/04/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,13 +95,13 @@ PreBuild:
 ##
 $(IntermediateDirectory)/sequence.cpp$(ObjectSuffix): sequence.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/sequence.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/sequence.cpp$(DependSuffix) -MM sequence.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A3_E2_Container_Class/sequence.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/sequence.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A3_E2_Container_Class/sequence.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/sequence.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/sequence.cpp$(PreprocessSuffix): sequence.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/sequence.cpp$(PreprocessSuffix) sequence.cpp
 
 $(IntermediateDirectory)/sequence_test.cpp$(ObjectSuffix): sequence_test.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/sequence_test.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/sequence_test.cpp$(DependSuffix) -MM sequence_test.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A3_E2_Container_Class/sequence_test.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/sequence_test.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A3_E2_Container_Class/sequence_test.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/sequence_test.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/sequence_test.cpp$(PreprocessSuffix): sequence_test.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/sequence_test.cpp$(PreprocessSuffix) sequence_test.cpp
 

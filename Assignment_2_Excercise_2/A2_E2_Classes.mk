@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=A2_E2_Classes
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/Assignment_2_Excercise_2"
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/Assignment_2_Excercise_2"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=06/03/2021
+Date                   :=04/04/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,13 +95,13 @@ PreBuild:
 ##
 $(IntermediateDirectory)/TestTemps.cpp$(ObjectSuffix): TestTemps.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/TestTemps.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/TestTemps.cpp$(DependSuffix) -MM TestTemps.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/Assignment_2_Excercise_2/TestTemps.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TestTemps.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/Assignment_2_Excercise_2/TestTemps.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TestTemps.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/TestTemps.cpp$(PreprocessSuffix): TestTemps.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/TestTemps.cpp$(PreprocessSuffix) TestTemps.cpp
 
 $(IntermediateDirectory)/Temps.cpp$(ObjectSuffix): Temps.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Temps.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Temps.cpp$(DependSuffix) -MM Temps.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/Assignment_2_Excercise_2/Temps.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Temps.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/Assignment_2_Excercise_2/Temps.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Temps.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Temps.cpp$(PreprocessSuffix): Temps.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Temps.cpp$(PreprocessSuffix) Temps.cpp
 

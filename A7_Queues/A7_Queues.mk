@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=A7_Queues
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A7_Queues"
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A7_Queues"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=06/03/2021
+Date                   :=04/04/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/testPalindrome.cpp$(ObjectSuffix): testPalindrome.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/testPalindrome.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/testPalindrome.cpp$(DependSuffix) -MM testPalindrome.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A7_Queues/testPalindrome.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/testPalindrome.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A7_Queues/testPalindrome.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/testPalindrome.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/testPalindrome.cpp$(PreprocessSuffix): testPalindrome.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/testPalindrome.cpp$(PreprocessSuffix) testPalindrome.cpp
 

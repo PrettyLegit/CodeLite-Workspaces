@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=friendtest
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/friendtest"
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/friendtest"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=06/03/2021
+Date                   :=04/04/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,13 +95,13 @@ PreBuild:
 ##
 $(IntermediateDirectory)/poly1.cpp$(ObjectSuffix): poly1.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/poly1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/poly1.cpp$(DependSuffix) -MM poly1.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/friendtest/poly1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/poly1.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/friendtest/poly1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/poly1.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/poly1.cpp$(PreprocessSuffix): poly1.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/poly1.cpp$(PreprocessSuffix) poly1.cpp
 
 $(IntermediateDirectory)/polytest1.cpp$(ObjectSuffix): polytest1.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/polytest1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/polytest1.cpp$(DependSuffix) -MM polytest1.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/friendtest/polytest1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/polytest1.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/friendtest/polytest1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/polytest1.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/polytest1.cpp$(PreprocessSuffix): polytest1.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/polytest1.cpp$(PreprocessSuffix) polytest1.cpp
 

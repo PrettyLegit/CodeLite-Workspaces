@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=A2_E1_Classes
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/Assignment_2"
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/Assignment_2"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=06/03/2021
+Date                   :=04/04/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,13 +95,13 @@ PreBuild:
 ##
 $(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix): Rectangle.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Rectangle.cpp$(DependSuffix) -MM Rectangle.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/Assignment_2/Rectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/Assignment_2/Rectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Rectangle.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Rectangle.cpp$(PreprocessSuffix): Rectangle.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Rectangle.cpp$(PreprocessSuffix) Rectangle.cpp
 
 $(IntermediateDirectory)/TestRectangle.cpp$(ObjectSuffix): TestRectangle.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/TestRectangle.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/TestRectangle.cpp$(DependSuffix) -MM TestRectangle.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/Assignment_2/TestRectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TestRectangle.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/Assignment_2/TestRectangle.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/TestRectangle.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/TestRectangle.cpp$(PreprocessSuffix): TestRectangle.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/TestRectangle.cpp$(PreprocessSuffix) TestRectangle.cpp
 

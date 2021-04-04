@@ -5,83 +5,69 @@
 // Assignment: 9
 
 #include "bst.h"
+#include <cmath>
 #include <cstdlib>
 #include <iomanip>  // setw
 #include <iostream> // Provides cout, cin, peek
 #include <string>
-#include <cmath>
 
 using namespace std;
 
-int insert_children_nodes(int length, int middle, int current, binary_search_tree<string>string_tree, string word_array[], int first_half);
-
+//prototypes
+void insert_children_nodes(binary_search_tree<string>& myTree, string word_array[], int length);
 
 int main()
 {
-	binary_search_tree<string> string_tree;
-	
-    string word_array[] = { "After", "Also", "any", "back", "because", "come", "day", "even", "first", "give", "how",
+    binary_search_tree<string> myTree;
+
+    string word_array[] = { "after", "also", "any", "back", "because", "come", "day", "even", "first", "give", "how",
 	"its", "look", "most", "new", "now", "only", "other", "our", "over", "than", "then", "these", "think", "two",
 	"us", "use", "want", "way", "well", "work" };
 
-	int length = sizeof(word_array)/sizeof(word_array[0]);
-	int middle = round(length/2);
-	int current;
-	//if this is true then we it returns 1, then we can resuse the recursive function to find the right side of the root.
-	int first_half = 0;
+    // int length = sizeof(word_array) / sizeof(word_array[0]);
+    int length = 31;
 
-	current = 0;
-	first_half = insert_children_nodes(length, middle, current, string_tree, word_array, first_half);
-	
-	//if first_half is 1, then we will insert to the right of the root
-	if(first_half == 1){
-		current = middle;
-		insert_children_nodes(length, middle, current, string_tree, word_array, first_half);
-	}
-	
-		//let's see the tree shape
-	print(string_tree.get_root(), 0);
-	
-  	//let's check if tree is balanced or not
-    cout << endl << "balanced? " << string_tree.is_balanced() << endl;
-	
+    insert_children_nodes(myTree, word_array, length);
+
+    cout << myTree << endl;
+
+    // let's see the tree shape
+    print(myTree.get_root(), 0);
+
+    // let's check if tree is balanced or not
+    cout << endl << "balanced? " << myTree.is_balanced() << endl;
+
     return EXIT_SUCCESS;
 }
 
-int insert_children_nodes(int length, int middle, int current, binary_search_tree<string>string_tree, string word_array[], int first_half){
+void insert_children_nodes(binary_search_tree<string>& myTree, string word_array[], int length)
+{
+
+    if(length == 1) {
+	myTree.insert(word_array[0]);
+    } else {
+
+	int mid = length / 2;
 	
-	//inserting left of root
-	if(first_half == 0){
+	myTree.insert(word_array[mid]);
+	
+	int left_length = 0;
+	int right_length = 0;
+	string* left_child_ptr = new string[mid];
+	string* right_child_ptr = new string[mid];
 
-		if(current < middle){
-			string_tree.insert(word_array[current]);
-			cout<< string_tree << endl;
-			return insert_children_nodes(length, middle, ++current, string_tree, word_array, first_half);
-		}else{
-			return 1;
-		}
-		
-	if(first_half == 1){
+	for(int i = 0; i < mid; i++) {
+	    left_child_ptr[i] = word_array[i];
+	    left_length++;
+	}
 
-		if(current < length){
-			string_tree.insert(word_array[current]);
-			cout<< string_tree << endl;
-			return insert_children_nodes(length, middle, ++current, string_tree, word_array, first_half);
-		}
-		
-		return 0;
+	for(int k = mid + 1; k < length; k++) {
+	    int index = k - (mid + 1);
+	    right_child_ptr[index] = word_array[k];
+	    right_length++;
 	}
-		
-		
-		
-		
-	}
-	return 0;
+
+	insert_children_nodes(myTree, left_child_ptr, left_length);
+	insert_children_nodes(myTree, right_child_ptr, right_length);
+    }
 }
-
-/*
- * make an array with all those words
- * needs to be recursive
- *
- *
- * */

@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=A3_E1_Container_Class
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A3_E1_Container_Class"
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A3_E1_Container_Class"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=06/03/2021
+Date                   :=04/04/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,13 +95,13 @@ PreBuild:
 ##
 $(IntermediateDirectory)/bag_demo.cpp$(ObjectSuffix): bag_demo.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/bag_demo.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/bag_demo.cpp$(DependSuffix) -MM bag_demo.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A3_E1_Container_Class/bag_demo.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/bag_demo.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A3_E1_Container_Class/bag_demo.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/bag_demo.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/bag_demo.cpp$(PreprocessSuffix): bag_demo.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/bag_demo.cpp$(PreprocessSuffix) bag_demo.cpp
 
 $(IntermediateDirectory)/bag1.cpp$(ObjectSuffix): bag1.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/bag1.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/bag1.cpp$(DependSuffix) -MM bag1.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive - Kennesaw State University/Documents/CodeLite Workspaces/A3_E1_Container_Class/bag1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/bag1.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A3_E1_Container_Class/bag1.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/bag1.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/bag1.cpp$(PreprocessSuffix): bag1.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/bag1.cpp$(PreprocessSuffix) bag1.cpp
 
