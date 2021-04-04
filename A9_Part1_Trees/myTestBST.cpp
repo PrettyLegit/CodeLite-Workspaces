@@ -37,12 +37,23 @@ int main()
     // let's check if tree is balanced or not
     cout << endl << "balanced? " << myTree.is_balanced() << endl;
 
+	cout << "\n-----Removing the root-----\n" << endl;
+	myTree.remove(myTree.get_root()->data());
+	
+	// let's check if tree is balanced or not
+    cout << endl << "Depth: " << myTree.is_balanced() << endl;
+	
+	// let's see the tree shape
+    print(myTree.get_root(), 0);
+
+
+	
     return EXIT_SUCCESS;
 }
 
 void insert_children_nodes(binary_search_tree<string>& myTree, string word_array[], int length)
 {
-
+	cout << length << " length" << endl;
     if(length == 1) {
 	myTree.insert(word_array[0]);
     } else {
