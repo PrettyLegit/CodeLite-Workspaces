@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace">
-  <int Value="4" Name="m_selectedTab"/>
+  <int Value="5" Name="m_selectedTab"/>
   <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
@@ -12,21 +12,21 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part0_Trees\bintree.template" Name="FileName"/>
-      <int Value="12" Name="FirstVisibleLine"/>
+      <int Value="18" Name="FirstVisibleLine"/>
       <int Value="20" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part0_Trees\bst.h" Name="FileName"/>
-      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="15" Name="FirstVisibleLine"/>
       <int Value="17" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part0_Trees\bst.template" Name="FileName"/>
-      <int Value="3" Name="FirstVisibleLine"/>
+      <int Value="75" Name="FirstVisibleLine"/>
       <int Value="77" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
@@ -40,8 +40,15 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A9_Part2_Trees\removeDouplicates.cpp" Name="FileName"/>
-      <int Value="4" Name="FirstVisibleLine"/>
-      <int Value="6" Name="CurrentLine"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="87" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A8_E3_Recursion\ReverseNumbers.cpp" Name="FileName"/>
+      <int Value="0" Name="FirstVisibleLine"/>
+      <int Value="83" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
