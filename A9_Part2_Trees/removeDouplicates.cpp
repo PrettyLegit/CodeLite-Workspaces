@@ -139,7 +139,6 @@ void print_menu()
 
 char get_command()
 {
-
     char command;
 
     cout << ">";
