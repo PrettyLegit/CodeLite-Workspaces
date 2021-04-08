@@ -1,0 +1,6 @@
+template <class T>
+priority_queue_heap<T>::priority_queue_heap(){};
+
+bool const priority_queue_heap::is_empty()
+	
+	

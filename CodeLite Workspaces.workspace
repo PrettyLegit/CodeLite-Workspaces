@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CodeLite_Workspace Name="CodeLite Workspaces" Database="" Version="10000">
   <Project Name="A2_E1_Classes" Path="Assignment_2/Assignment_2.project" Active="No"/>
-  <Project Name="A2_E2_Classes" Path="Assignment_2_Excercise_2/Assignment_2_Excercise_2.project" Active="No"/>
+  <Project Name="A2_E2_Classes" Path="Assignment_2_Excercise_2/Assignment_2_Excercise_2.project" Active="Yes"/>
   <Project Name="A3_E1_Container_Class" Path="A3_E1_Container_Class/A3_E1_Container_Class.project" Active="No"/>
   <Project Name="A0" Path="A0/A0.project" Active="No"/>
   <Project Name="A3_E2_Container_Class" Path="A3_E2_Container_Class/A3_E2_Container_Class.project" Active="No"/>
@@ -17,7 +17,7 @@
   <Project Name="A8_E3_Recursion" Path="A8_E3_Recursion/A8_E3_Recursion.project" Active="No"/>
   <Project Name="A9_Part0_Trees" Path="A9_Part0_Trees/A9_Part0_Trees.project" Active="No"/>
   <Project Name="A9_Part1_Trees" Path="A9_Part1_Trees/A9_Part1_Trees.project" Active="No"/>
-  <Project Name="A9_Part2_Trees" Path="A9_Part2_Trees/A9_Part2_Trees.project" Active="Yes"/>
+  <Project Name="A9_Part2_Trees" Path="A9_Part2_Trees/A9_Part2_Trees.project" Active="No"/>
   <Project Name="A10_Part0_Heaps" Path="A10_Part0_Heaps/A10_Part0_Heaps.project" Active="No"/>
   <Project Name="A10_Part1_Heaps" Path="A10_Part1_Heaps/A10_Part1_Heaps.project" Active="No"/>
   <BuildMatrix>

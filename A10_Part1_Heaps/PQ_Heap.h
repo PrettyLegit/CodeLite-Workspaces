@@ -27,6 +27,8 @@ class priority_queue_heap {
    // Precondition: priority queue is not full
    void enqueue(const T& value);
 
+private:
+	heap<T> myHeap;
 };
 
 #include "PQ_Heap.template"
