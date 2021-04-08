@@ -4,7 +4,9 @@
 template <class T>
 class priority_queue_heap {
 	
-	priority_queue_heap();
+	priority_queue_heap() {
+		myHeap = NULL;
+	}
 	
     // Return true if priority queue is empty; otherwise return false
 	bool is_empty() const;
@@ -28,7 +30,7 @@ class priority_queue_heap {
    void enqueue(const T& value);
 
 private:
-	heap<T> myHeap;
+	heap<T> *myHeap;
 };
 
 #include "PQ_Heap.template"

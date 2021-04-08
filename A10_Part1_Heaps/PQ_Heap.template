@@ -1,6 +1,8 @@
-template <class T>
-priority_queue_heap<T>::priority_queue_heap(){};
+#include "PQ_Heap.h"
 
-bool const priority_queue_heap::is_empty()
+template <class T>
+bool priority_queue_heap<T>::is_empty() const {
 	
+
 	
+//priority_queue_heap<T>::priority_queue_heap(){};
