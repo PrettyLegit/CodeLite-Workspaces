@@ -37,7 +37,7 @@ public:
     void print_elements();
 
 private:
-    priority_queue_heap<T> myHeap;
+    heap<T> myHeap;
 };
 
 #include "PQ_Heap.template"

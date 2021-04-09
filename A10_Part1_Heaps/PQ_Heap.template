@@ -20,7 +20,6 @@ T priority_queue_heap<T>::front(){
 		return myHeap.get_elemement[0];
 	}else{
 		cout << "This heap is empty.";
-		return;
 	}
 }
 
@@ -32,7 +31,6 @@ T priority_queue_heap<T>::dequeue(){
 	else
 	{
 		cout << "There is nothing remove";
-		return;
 	}
 		
 }
