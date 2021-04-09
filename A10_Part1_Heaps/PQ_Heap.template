@@ -1,8 +1,63 @@
 #include "PQ_Heap.h"
+#include <iostream>
+#include <cstdlib>
 
+using namespace std;
 template <class T>
 bool priority_queue_heap<T>::is_empty() const {
-	
+	return myHeap.is_empty();
+}
 
-	
+template <class T>
+bool priority_queue_heap<T>::is_full() const{
+	return myHeap.is_full();
+}
 //priority_queue_heap<T>::priority_queue_heap(){};
+
+template <class T>
+T priority_queue_heap<T>::front(){
+	if(!myHeap.is_empty){
+		return myHeap.get_elemement[0];
+	}else{
+		cout << "This heap is empty.";
+		return;
+	}
+}
+
+template <class T>
+T priority_queue_heap<T>::dequeue(){
+	if(!myHeap.is_empty){
+		return myHeap.remove();
+	}
+	else
+	{
+		cout << "There is nothing remove";
+		return;
+	}
+		
+}
+
+template <class T>
+void priority_queue_heap<T>::enqueue(const T& value){
+	if(!myHeap.is_full()){
+		myHeap.insert(value);
+	}
+	else
+	{
+		cout << "Queue is full, no more values can be added" << endl;
+	}
+}
+
+template <class T>
+void priority_queue_heap<T>::print_elements(){
+	
+//	int size = get_size();
+//	
+//	cout << "Printing Queue Element " << endl;
+//	for(int i = 0; i < size; i++)
+//	{
+//		cout << myHeap.get_elemement(i) << " "; 
+//	}
+	myHeap.check_heap();
+}
+

@@ -37,6 +37,14 @@ public:
      */
     bool check_heap();
 
+	T get_element(int index){
+		return data[index];
+	}
+	
+	T get_size()
+	{
+		return size;
+	}
 private:
     T data[CAPACITY];
     int size;
