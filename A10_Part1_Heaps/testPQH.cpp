@@ -4,8 +4,8 @@
 // Instructor: Dr. Haddad
 // Assignment: 10
 
-#include "heap.h"
 #include "PQ_Heap.h"
+#include "heap.h"
 #include <ctime>
 #include <ctype.h>
 #include <iostream>
@@ -20,8 +20,8 @@ char get_command();
 int main()
 {
 
-	priority_queue_heap<int> number_heap;
-	priority_queue_heap<string> string_heap;
+    priority_queue_heap<int> number_heap;
+    priority_queue_heap<string> string_heap;
     /*When flag is true, the user will be allowed to use commands 1-7*/
     bool flag = false;
     char command;
@@ -31,104 +31,117 @@ int main()
     string string_input = "";
 
     do {
-		print_menu();
-		
-		command = get_command();
+	print_menu();
 
-		if(command == '0') {
-			flag = true;
-			
-			cin.clear();
-			cin.sync();
-			cout << "Type 'int' or 'string'" << endl;
-			cin >> queue_type;
-			
+	command = get_command();
 
-			if(queue_type == "int") {
-				is_int_type = true;
-			}
+	if(command == '0') {
+	    flag = true;
 
-			if(queue_type == "string") {
-				is_int_type = false;
-			}
+	    cin.clear();
+	    cin.sync();
+	    cout << "Type 'int' or 'string'" << endl;
+	    cin >> queue_type;
 
-			if(queue_type != "int" || queue_type != "string") {
-			cout << "\n\n---You did not type 'int' or 'string'---\n\n";
-			flag = false;
-			}
-		} else 
-		{
-			cout << "\n\n---You must select option 0 before you can use the other options.---\n\n";
+	    if(queue_type == "int") {
+		is_int_type = true;
+	    }
+
+	    if(queue_type == "string") {
+		is_int_type = false;
+	    }
+
+	    if(queue_type != "int" || queue_type != "string") {
+		cout << "\n\n---You did not type 'int' or 'string'---\n\n";
+		flag = false;
+	    }
+	} else {
+	    cout << "\n\n---You must select option 0 before you can use the other options.---\n\n";
+	}
+
+	/*user pressed 0 and typed correct data type*/
+	if(flag) {
+	    if(is_int_type) {
+		switch(command) {
+		case '1':
+		    cout << "Enter in whole numbers" << endl;
+		    cin.clear();
+		    cin.sync();
+		    cin >> number_input;
+		    if(isdigit(number_input)) {
+			number_heap.enqueue(number_input);
+		    } else {
+			cout << number_input << " is not a valid integer data type." << endl;
+			cout << "No data was added to the priority queue." << endl;
+		    }
+
+		    break;
+
+		case '2':
+		    cout << "Dequeueing the highet value in the priority queue." << endl;
+			number_heap.dequeue();
+		    break;
+
+		case '3':
+		    cout << "Calling is_Full function." << endl;
+
+		    break;
+
+		case '4':
+		    cout << "Calling is_Empty function." << endl;
+		    break;
+
+		case '5':
+		    cout << "Printing size of the priority queue." << endl;
+		    break;
+
+		case '6':
+		    cout << "Displaying the Front Element." << endl;
+		    break;
+
+		case '7':
+		    cout << "Printing Queue Elements." << endl;
+		    break;
 		}
+	    }
 
-		if(flag) {
-			if(is_int_type) {
-			switch(command) {
-				case '1':
-					cout << "Enter in whole numbers" << endl;
-					cin.clear();
-					cin.sync();
-					cin >> number_input;
-					if(isdigit(number_input)){
-						number_heap.enqueue(number_input);
-					}
-					else
-					{
-						cout << number_input << " is not a valid integer data type." << endl;
-						cout << "No data was added to the priority queue" << endl;
-					}
-					
-					break;
+	    if(!is_int_type) {
+		switch(command) {
+		case '1':
+		    cout << "Enter in a string." << endl;
+		    cin.clear();
+		    cin.sync();
+		    getline(cin, string_input);
+		    string_heap.enqueue(string_input);
+		    break;
 
-				case '2':
-					break;
+		case '2':
+		    cout << "Dequeueing the highet value in the priority queue." << endl;
 
-				case '3':
-					break;
+		    break;
 
-				case '4':
-					break;
+		case '3':
+		    cout << "Calling is_Full function." << endl;
 
-				case '5':
-					break;
+		    break;
 
-				case '6':
-					break;
+		case '4':
+		    cout << "Calling is_Empty function." << endl;
+		    break;
 
-				case '7':
-					break;
-				}
-			}
+		case '5':
+		    cout << "Printing size of the priority queue." << endl;
+		    break;
 
-			if(!is_int_type) {
-			switch(command) {
-			case '1':
-				cout << "Enter in a string" << endl;
-				cin.clear();
-				cin.sync();
-				getline(cin, string_input);
-				string_heap.enqueue(string_input);
-				break;
+		case '6':
+		    cout << "Displaying the Front Element." << endl;
+		    break;
 
-			case '2':
-				break;
-
-			case '3':
-				break;
-
-			case '4':
-				break;
-
-			case '5':
-				break;
-
-			case '6':
-				break;
-
-			case '7':
-				break;
-			}
-			}
+		case '7':
+		    cout << "Printing Queue Elements." << endl;
+		    break;
+		}
+	    }
 	}
     } while(command != '8');
 
@@ -154,7 +167,6 @@ void print_menu()
 
 char get_command()
 {
-
     char command;
 
     cout << ">";

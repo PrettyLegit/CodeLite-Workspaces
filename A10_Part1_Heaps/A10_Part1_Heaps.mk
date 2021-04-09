@@ -5,15 +5,15 @@
 ## Debug
 ProjectName            :=A10_Part1_Heaps
 ConfigurationName      :=Debug
-WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
-ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A10_Part1_Heaps"
+WorkspacePath          :=C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces
+ProjectPath            :=C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces/A10_Part1_Heaps
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
 CurrentFilePath        :=
 CurrentFileFullPath    :=
 User                   :=Jimmy
-Date                   :=08/04/2021
+Date                   :=09/04/2021
 CodeLitePath           :="C:/Program Files/CodeLite"
 LinkerName             :=C:/MinGW/bin/g++.exe
 SharedObjectLinkerName :=C:/MinGW/bin/g++.exe -shared -fPIC
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/testPQH.cpp$(ObjectSuffix): testPQH.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/testPQH.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/testPQH.cpp$(DependSuffix) -MM testPQH.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A10_Part1_Heaps/testPQH.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/testPQH.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces/A10_Part1_Heaps/testPQH.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/testPQH.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/testPQH.cpp$(PreprocessSuffix): testPQH.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/testPQH.cpp$(PreprocessSuffix) testPQH.cpp
 
