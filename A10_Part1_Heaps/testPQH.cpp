@@ -10,12 +10,17 @@
 #include <ctype.h>
 #include <iostream>
 #include <string>
+#include <cmath>
+#include <cassert>
 
 using namespace std;
 
 // prototypes
 void print_menu();
 char get_command();
+/*NOTE: this is an unused function. i was trying to create a way to verify the int input 
+was an integar data type without using a string and doing an is digit at each index at the string*/
+//bool is_integer(int number_input);
 
 int main()
 {
@@ -41,21 +46,23 @@ int main()
 	    cin.clear();
 	    cin.sync();
 	    cout << "Type 'int' or 'string'" << endl;
-	    cin >> queue_type;
+	    getline(cin, queue_type);
 
 	    if(queue_type == "int") {
+		cout << "You selected to work on the int priority queue." << endl;
 		is_int_type = true;
 	    }
 
 	    if(queue_type == "string") {
+		cout << "You selected to work on the string priority queue." << endl;
 		is_int_type = false;
 	    }
 
-	    if(queue_type != "int" || queue_type != "string") {
-		cout << "\n\n---You did not type 'int' or 'string'---\n\n";
-		flag = false;
+	    if((queue_type != "int") && (queue_type != "string")) {
+			cout << "\n\n---You did not type 'int' or 'string'---\n\n";
+			flag = false;
 	    }
-	} else {
+	} else if(!flag){
 	    cout << "\n\n---You must select option 0 before you can use the other options.---\n\n";
 	}
 
@@ -68,12 +75,16 @@ int main()
 		    cin.clear();
 		    cin.sync();
 		    cin >> number_input;
-		    if(isdigit(number_input)) {
+
+			//assert(is_digit(number_input);
 			number_heap.enqueue(number_input);
-		    } else {
-			cout << number_input << " is not a valid integer data type." << endl;
-			cout << "No data was added to the priority queue." << endl;
-		    }
+//		    if(number_input <= 0 || number_input >= 0) {
+//			
+//			
+//		    } else {
+//			cout << number_input << " is not a valid integer data type." << endl;
+//			cout << "No data was added to the priority queue." << endl;
+//		    }
 
 		    break;
 
@@ -84,23 +95,41 @@ int main()
 
 		case '3':
 		    cout << "Calling is_Full function." << endl;
-
+			if(number_heap.is_full()){
+				cout << "The priority queue is full." << endl;
+			}
+			else
+			{
+				cout << "The priority queue is not full." << endl;
+			}
 		    break;
 
 		case '4':
 		    cout << "Calling is_Empty function." << endl;
+			if(number_heap.is_empty()){
+				cout << "The priority queue is empty." << endl;
+			}
+			else
+			{
+				cout << "The priority queue is not empty." << endl;
+			}
 		    break;
 
 		case '5':
 		    cout << "Printing size of the priority queue." << endl;
+			
+			cout << "Size is: " << number_heap.size() << endl;
+			
 		    break;
 
 		case '6':
 		    cout << "Displaying the Front Element." << endl;
+			cout << "Front element is: " << number_heap.front() << endl;
 		    break;
 
 		case '7':
 		    cout << "Printing Queue Elements." << endl;
+			number_heap.print_elements();
 		    break;
 		}
 	    }
@@ -117,28 +146,46 @@ int main()
 
 		case '2':
 		    cout << "Dequeueing the highet value in the priority queue." << endl;
-
+			string_heap.dequeue();
 		    break;
 
 		case '3':
 		    cout << "Calling is_Full function." << endl;
-
+			if(string_heap.is_full()){
+				cout << "The priority queue is full." << endl;
+			}
+			else
+			{
+				cout << "The priority queue is not full." << endl;
+			}
 		    break;
 
 		case '4':
 		    cout << "Calling is_Empty function." << endl;
+			if(string_heap.is_empty()){
+				cout << "The priority queue is empty." << endl;
+			}
+			else
+			{
+				cout << "The priority queue is not empty." << endl;
+			}
 		    break;
 
 		case '5':
 		    cout << "Printing size of the priority queue." << endl;
+			
+			cout << "Size is: " << string_heap.size() << endl;
+			
 		    break;
 
 		case '6':
 		    cout << "Displaying the Front Element." << endl;
+			cout << "Front element is: " << string_heap.front() << endl;
 		    break;
 
 		case '7':
 		    cout << "Printing Queue Elements." << endl;
+			string_heap.print_elements();
 		    break;
 		}
 	    }
@@ -155,11 +202,8 @@ void print_menu()
     cout << "1. Enqueue Element" << endl;
     cout << "2. Dequeue Element" << endl;
     cout << "3. Check is_Full" << endl;
-    cout << "1. Enter a string and process the data" << endl;
     cout << "4. Check is_Empty" << endl;
-    cout << "1. Enter a string and process the data" << endl;
     cout << "5. Print Size" << endl;
-    cout << "1. Enter a string and process the data" << endl;
     cout << "6. Display Front Element" << endl;
     cout << "7. Print Queue Element" << endl;
     cout << "8. Quit program" << endl;
@@ -174,3 +218,10 @@ char get_command()
 
     return (toupper(command));
 }
+
+
+
+//bool is_integer(int number_input)
+//{
+//  return floor(number_input) == number_input;
+//}

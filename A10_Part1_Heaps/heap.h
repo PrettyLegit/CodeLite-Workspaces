@@ -37,11 +37,12 @@ public:
      */
     bool check_heap();
 
+	//added a getter for private variables instead of calling the private variables explicitly
 	T get_element(int index){
 		return data[index];
 	}
 	
-	T get_size()
+	int get_size()
 	{
 		return size;
 	}

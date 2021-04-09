@@ -12,20 +12,26 @@ template <class T>
 bool priority_queue_heap<T>::is_full() const{
 	return myHeap.is_full();
 }
-//priority_queue_heap<T>::priority_queue_heap(){};
 
+//note: this would also work in the if statement
+//!priority_queue_heap<T>::is_empty()
 template <class T>
 T priority_queue_heap<T>::front(){
-	if(!myHeap.is_empty){
-		return myHeap.get_elemement[0];
+	if(myHeap.is_empty() != 1){
+		return myHeap.get_element(0);
 	}else{
-		cout << "This heap is empty.";
+		cout << "This heap is empty." << endl;
 	}
 }
 
 template <class T>
+int priority_queue_heap<T>::size(){
+	return myHeap.get_size();
+}
+
+template <class T>
 T priority_queue_heap<T>::dequeue(){
-	if(!myHeap.is_empty){
+	if(myHeap.is_empty() != 1){
 		return myHeap.remove();
 	}
 	else
@@ -37,7 +43,7 @@ T priority_queue_heap<T>::dequeue(){
 
 template <class T>
 void priority_queue_heap<T>::enqueue(const T& value){
-	if(!myHeap.is_full()){
+	if(myHeap.is_full() != 1){
 		myHeap.insert(value);
 	}
 	else
@@ -48,7 +54,9 @@ void priority_queue_heap<T>::enqueue(const T& value){
 
 template <class T>
 void priority_queue_heap<T>::print_elements(){
-	
+
+/*NOTE: i originally was going to just print the priority queue like this but we
+we had to use the check heap method*/	
 //	int size = get_size();
 //	
 //	cout << "Printing Queue Element " << endl;
