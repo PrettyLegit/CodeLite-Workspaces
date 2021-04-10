@@ -33,8 +33,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A10_Part1_Heaps\testPQH.cpp" Name="FileName"/>
-      <int Value="60" Name="FirstVisibleLine"/>
-      <int Value="35" Name="CurrentLine"/>
+      <int Value="64" Name="FirstVisibleLine"/>
+      <int Value="80" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>

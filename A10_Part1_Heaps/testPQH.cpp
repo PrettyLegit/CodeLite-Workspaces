@@ -78,7 +78,7 @@ int main()
 				std::cin.clear();
 				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 				cout << "Error: Please enter a whole number greater than 0: " << endl;
-				cout << number_input << " is not a valid integer data type." << endl;
+				cout << "The input was not a valid integer data type." << endl;
 				cout << "No data was added to the priority queue." << endl;
 			}
 			number_heap.enqueue(number_input);
