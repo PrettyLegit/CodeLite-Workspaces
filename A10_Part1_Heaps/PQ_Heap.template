@@ -26,6 +26,7 @@ T priority_queue_heap<T>::front(){
 
 template <class T>
 int priority_queue_heap<T>::size(){
+	//return size; //do line 29 instead of line 30?
 	return myHeap.get_size();
 }
 

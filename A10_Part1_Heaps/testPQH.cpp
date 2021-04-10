@@ -12,6 +12,7 @@
 #include <string>
 #include <cmath>
 #include <cassert>
+#include <limits>
 
 using namespace std;
 
@@ -32,7 +33,7 @@ int main()
     char command;
     string queue_type = "";
     bool is_int_type = false;
-    int number_input = 0;
+    int number_input = -1;
     string string_input = "";
 
     do {
@@ -71,21 +72,18 @@ int main()
 	    if(is_int_type) {
 		switch(command) {
 		case '1':
-		    cout << "Enter in whole numbers" << endl;
-		    cin.clear();
-		    cin.sync();
-		    cin >> number_input;
-
-			//assert(is_digit(number_input);
+			
+			while ((cout << "Enter in whole numbers:" << endl) && !(cin >> number_input)){
+				cin >> number_input;
+				std::cin.clear();
+				std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+				cout << "Error: Please enter a whole number greater than 0: " << endl;
+				cout << number_input << " is not a valid integer data type." << endl;
+				cout << "No data was added to the priority queue." << endl;
+			}
 			number_heap.enqueue(number_input);
-//		    if(number_input <= 0 || number_input >= 0) {
-//			
-//			
-//		    } else {
-//			cout << number_input << " is not a valid integer data type." << endl;
-//			cout << "No data was added to the priority queue." << endl;
-//		    }
-
+			cout << number_input << " has been added to the priority queue." << endl;
+			
 		    break;
 
 		case '2':
