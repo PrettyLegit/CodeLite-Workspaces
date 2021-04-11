@@ -17,10 +17,13 @@ bool priority_queue_heap<T>::is_full() const{
 //!priority_queue_heap<T>::is_empty()
 template <class T>
 T priority_queue_heap<T>::front(){
-	if(myHeap.is_empty() != 1){
+	if(myHeap.is_empty() != 1)
+	{
 		return myHeap.get_element(0);
-	}else{
-		cout << "This heap is empty." << endl;
+	}
+	else
+	{
+		cout << "Empty Queue" << endl;
 	}
 }
 
@@ -37,7 +40,7 @@ T priority_queue_heap<T>::dequeue(){
 	}
 	else
 	{
-		cout << "There is nothing remove";
+		cout << "Empty Queue";
 	}
 		
 }

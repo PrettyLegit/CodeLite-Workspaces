@@ -161,7 +161,7 @@ int main()
 		case '4':
 		    cout << "Calling is_Empty function." << endl;
 			if(string_heap.is_empty()){
-				cout << "The priority queue is empty." << endl;
+				cout << "Empty Priority Queue." << endl;
 			}
 			else
 			{
@@ -178,12 +178,22 @@ int main()
 
 		case '6':
 		    cout << "Displaying the Front Element." << endl;
-			cout << "Front element is: " << string_heap.front() << endl;
+			if(string_heap.is_empty()){
+				cout << "Empty Priority Queue." << endl;
+			}
+			else{
+				cout << "Front element is: " << string_heap.front() << endl;
+			}
 		    break;
 
 		case '7':
 		    cout << "Printing Queue Elements." << endl;
-			string_heap.print_elements();
+			if(string_heap.is_empty()){
+				cout << "Empty Priority Queue." << endl;
+			}
+			else{
+				string_heap.print_elements();
+			}
 		    break;
 		}
 	    }
