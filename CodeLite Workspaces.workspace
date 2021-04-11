@@ -19,7 +19,8 @@
   <Project Name="A9_Part1_Trees" Path="A9_Part1_Trees/A9_Part1_Trees.project" Active="No"/>
   <Project Name="A9_Part2_Trees" Path="A9_Part2_Trees/A9_Part2_Trees.project" Active="No"/>
   <Project Name="A10_Part0_Heaps" Path="A10_Part0_Heaps/A10_Part0_Heaps.project" Active="No"/>
-  <Project Name="A10_Part1_Heaps" Path="A10_Part1_Heaps/A10_Part1_Heaps.project" Active="Yes"/>
+  <Project Name="A10_Part1_Heaps" Path="A10_Part1_Heaps/A10_Part1_Heaps.project" Active="No"/>
+  <Project Name="z_testing_alex_a10" Path="z_testing_alex_a10/z_testing_alex_a10.project" Active="Yes"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -49,6 +50,7 @@
       <Project Name="A9_Part2_Trees" ConfigName="Debug"/>
       <Project Name="A10_Part0_Heaps" ConfigName="Debug"/>
       <Project Name="A10_Part1_Heaps" ConfigName="Debug"/>
+      <Project Name="z_testing_alex_a10" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -78,6 +80,7 @@
       <Project Name="A9_Part2_Trees" ConfigName="Release"/>
       <Project Name="A10_Part0_Heaps" ConfigName="Release"/>
       <Project Name="A10_Part1_Heaps" ConfigName="Release"/>
+      <Project Name="z_testing_alex_a10" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
