@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace">
-  <int Value="0" Name="m_selectedTab"/>
+  <int Value="1" Name="m_selectedTab"/>
   <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
@@ -12,8 +12,8 @@
     </TabInfo>
     <TabInfo>
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A10_Part1_Heaps\PQ_Heap.template" Name="FileName"/>
-      <int Value="44" Name="FirstVisibleLine"/>
-      <int Value="20" Name="CurrentLine"/>
+      <int Value="19" Name="FirstVisibleLine"/>
+      <int Value="34" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
