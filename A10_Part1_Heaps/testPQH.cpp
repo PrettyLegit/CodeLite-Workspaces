@@ -127,7 +127,12 @@ int main()
 
 		case '7':
 		    cout << "Printing Queue Elements." << endl;
-			number_heap.print_elements();
+			if(number_heap.is_empty()){
+				cout << "Empty Priority Queue." << endl;
+			}
+			else{
+				string_heap.print_elements();
+			}
 		    break;
 		}
 	    }
