@@ -122,7 +122,12 @@ int main()
 
 		case '6':
 		    cout << "Displaying the Front Element." << endl;
-			cout << "Front element is: " << number_heap.front() << endl;
+			if(number_heap.is_empty()){
+				cout << "Empty Priority Queue." << endl;
+			}
+			else{
+				cout << "Front element is: " << number_heap.front() << endl;
+			}
 		    break;
 
 		case '7':
