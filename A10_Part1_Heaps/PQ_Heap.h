@@ -1,3 +1,9 @@
+// Name: Jimmy Nguyen
+// Class: CS 3305
+// Term: Spring 2021
+// Instructor: Dr. Haddad
+// Assignment: 10
+
 #include "heap.h"
 #ifndef PRIORITY_QUEUE_HEAP_H
 #define PRIORITY_QUEUE_HEAP_H

@@ -1,3 +1,9 @@
+// Name: Alex Ingram
+// Class: CS 3305
+// Term: Spring 2021
+// Instructor: Dr. Haddad
+// Assignment: 10
+
 // FILE: bintree.h (part of the namespace main_savitch_10)
 // PROVIDES: A template class for a node in a binary tree and functions for 
 // manipulating binary trees. The template parameter is the type of data in

@@ -1,3 +1,9 @@
+// Name: Alex Ingram
+// Class: CS 3305
+// Term: Spring 2021
+// Instructor: Dr. Haddad
+// Assignment: 10
+
 // FILE: bintree.template
 // IMPLEMENTS: The binary_tree node class (see bintree.h for documentation). 
 #include <cassert>    // Provides assert

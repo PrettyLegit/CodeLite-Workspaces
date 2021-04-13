@@ -1,3 +1,9 @@
+// Name: Alex Ingram
+// Class: CS 3305
+// Term: Spring 2021
+// Instructor: Dr. Haddad
+// Assignment: 10
+
 #ifndef BST_H
 #define BST_H
 
