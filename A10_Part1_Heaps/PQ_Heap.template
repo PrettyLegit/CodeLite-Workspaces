@@ -5,75 +5,66 @@
 // Assignment: 10
 
 #include "PQ_Heap.h"
-#include <iostream>
 #include <cstdlib>
+#include <iostream>
 
 using namespace std;
-template <class T>
-bool priority_queue_heap<T>::is_empty() const {
-	return myHeap.is_empty();
+template <class T> bool priority_queue_heap<T>::is_empty() const
+{
+    return myHeap.is_empty();
 }
 
-template <class T>
-bool priority_queue_heap<T>::is_full() const{
-	return myHeap.is_full();
+template <class T> bool priority_queue_heap<T>::is_full() const
+{
+    return myHeap.is_full();
 }
 
-//note: this would also work in the if statement
-//!priority_queue_heap<T>::is_empty()
-template <class T>
-T priority_queue_heap<T>::front(){
-	if(myHeap.is_empty() != 1)
-	{
-		return myHeap.get_element(0);
-	}
-	else
-	{
-		cout << "Empty Queue" << endl;
-	}
+// note: this would also work in the if statement
+//! priority_queue_heap<T>::is_empty()
+template <class T> T priority_queue_heap<T>::front()
+{
+    if(myHeap.is_empty() != 1) {
+	return myHeap.get_element(0);
+    } else {
+	cout << "Empty Queue" << endl;
+    }
 }
 
-template <class T>
-int priority_queue_heap<T>::size(){
-	//return size; //do line 29 instead of line 30?
-	return myHeap.get_size();
+template <class T> int priority_queue_heap<T>::size()
+{
+    // return size; //do line 29 instead of line 30?
+    return myHeap.get_size();
 }
 
-template <class T>
-T priority_queue_heap<T>::dequeue(){
-	if(myHeap.is_empty() != 1){
-		return myHeap.remove();
-	}
-	else
-	{
-		cout << "Empty Queue";
-	}
-		
+template <class T> T priority_queue_heap<T>::dequeue()
+{
+    if(myHeap.is_empty() != 1) {
+	return myHeap.remove();
+    } else {
+	cout << "Empty Queue";
+    }
 }
 
-template <class T>
-void priority_queue_heap<T>::enqueue(const T& value){
-	if(myHeap.is_full() != 1){
-		myHeap.insert(value);
-	}
-	else
-	{
-		cout << "Queue is full, no more values can be added" << endl;
-	}
+template <class T> void priority_queue_heap<T>::enqueue(const T& value)
+{
+    if(myHeap.is_full() != 1) {
+	myHeap.insert(value);
+    } else {
+	cout << "Queue is full, no more values can be added" << endl;
+    }
 }
 
-template <class T>
-void priority_queue_heap<T>::print_elements(){
+template <class T> void priority_queue_heap<T>::print_elements()
+{
 
-/*NOTE: i originally was going to just print the priority queue like this but we
-we had to use the check heap method*/	
-//	int size = get_size();
-//	
-//	cout << "Printing Queue Element " << endl;
-//	for(int i = 0; i < size; i++)
-//	{
-//		cout << myHeap.get_elemement(i) << " "; 
-//	}
-	myHeap.check_heap();
+    /*NOTE: i originally was going to just print the priority queue like this but we
+    we had to use the check heap method*/
+    //	int size = get_size();
+    //
+    //	cout << "Printing Queue Element " << endl;
+    //	for(int i = 0; i < size; i++)
+    //	{
+    //		cout << myHeap.get_elemement(i) << " ";
+    //	}
+    myHeap.check_heap();
 }
-
