@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=A11_Hash_Tables
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces
-ProjectPath            :=C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces/A11_Hash_Tables
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A11_Hash_Tables"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/hashFunctions.cpp$(ObjectSuffix): hashFunctions.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/hashFunctions.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/hashFunctions.cpp$(DependSuffix) -MM hashFunctions.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces/A11_Hash_Tables/hashFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/hashFunctions.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A11_Hash_Tables/hashFunctions.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/hashFunctions.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/hashFunctions.cpp$(PreprocessSuffix): hashFunctions.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/hashFunctions.cpp$(PreprocessSuffix) hashFunctions.cpp
 
