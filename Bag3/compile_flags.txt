@@ -5,6 +5,6 @@
 -Ic:\MinGW\include
 -Ic:\MinGW\lib\gcc\mingw32\6.3.0\include-fixed
 -Ic:\MinGW\mingw32\include
--IC:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\Bag3
+-IC:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\Bag3
 -target
 i686-pc-windows-gnu
