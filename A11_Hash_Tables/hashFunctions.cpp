@@ -18,6 +18,8 @@ using namespace std;
 void print_menu();
 char get_command();
 void hash1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
+void hash2(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
+void hash3(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
 void intialize_empty_table(int Table[50][2]);
 void print_table(int Table[50][2], size_t const CAPACITY_X, size_t const CAPACITY_Y);
 void sumProbes(int Table[50][2], size_t const CAPACITY_X);
@@ -45,6 +47,10 @@ int main()
 	}
 
 	if(command == '2') {
+		intialize_empty_table(Table);
+		
+		print_table(Table, CAPACITY_X, CAPACITY_Y);
+	    //sumProbes(Table, CAPACITY_X);
 	}
 
 	if(command == '3') {
@@ -61,7 +67,7 @@ void hash1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
 
     size_t current = 0;
     size_t probe = 0;
-    int probe_counter = 0;
+    size_t probe_counter = 0;
     bool isVacant = true;
     do {
 	// getting the key value for the first index and then hashing it.
@@ -83,22 +89,77 @@ void hash1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
 	} else {
 	    // if the hash value is occupied, then we now start probing from the current position to the next position.
 	    probe = hash_value;
-	    isVacant = 1;
+	    isVacant = true;
 		
 	    while(isVacant) {
 			
 		// if he probe has reach the end of the Table, then start the probe at index 0
-		if(probe > CAPACITY_X) {
+		if(probe+1 > CAPACITY_X) {
 		    probe = 0;
 		}
-			probe++;
-			probe_counter++;
+			
 		if(Table[probe][0] == -1) {
 		    Table[probe][0] = keys[current];
 			Table[probe][1] = probe_counter;
 		    isVacant = false;
+		}else
+		{
+			probe++;
+			probe_counter++;
 		}
+	    }
+	}
+	current++;
+    } while(current < CAPACITY_X);
+}
+
+void hash2(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y){
+	
+	size_t hash_value = 0;
+    int key_value = 0;
+
+    size_t current = 0;
+    size_t probe = 0;
+    size_t probe_counter = 0;
+    bool isVacant = true;
+    do {
+	// getting the key value for the first index and then hashing it.
+	key_value = keys[current];
+	hash_value = key_value % 50;
+	probe_counter = 0;
+	/*NOTE: probe counter will start out as 0 for every time the we hash a new value. When we probe,
+	then probe_counter will increment and be stored in Table[Hash_value][1]
+	note that in the else statement where the probe happens, hash_value is replaced in Table[probe][1]*/
+
+	//cout << "Key VALUE " << key_value << endl;
+	//cout << "HASH VALUE " << hash_value << endl;
+	//cout << endl;
+
+	// if the table at the hash value is empty, then we can put the key value in that spot
+	if(Table[hash_value][0] == -1) {
+	    Table[hash_value][0] = key_value;
+	    Table[hash_value][1] = probe_counter;
+	} else {
+	    // if the hash value is occupied, then we now start probing from the current position to the next position.
+	    probe = hash_value;
+	    isVacant = true;
 		
+	    while(isVacant) {
+			
+		// if he probe has reach the end of the Table, then start the probe at index 0
+		if(probe+1 > CAPACITY_X) {
+		    probe = 0;
+		}
+			
+		if(Table[probe][0] == -1) {
+		    Table[probe][0] = keys[current];
+			Table[probe][1] = probe_counter;
+		    isVacant = false;
+		}else
+		{
+			probe++;
+			probe_counter++;
+		}
 	    }
 	}
 	current++;
@@ -108,11 +169,6 @@ void hash1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
 // fill in hash table with -1 to indicate unused
 void intialize_empty_table(int Table[50][2])
 {
-    //    size_t column = 0;
-    //    for(size_t row = 0; row < 50; row++) {
-    //	Table[row][column] = -1;
-    //    }
-
     for(size_t row = 0; row < 50; row++) {
 
 	Table[row][0] = -1;
@@ -122,8 +178,6 @@ void intialize_empty_table(int Table[50][2])
 
 void print_table(int Table[][2], size_t const CAPACITY_X, size_t const CAPACITY_Y)
 {
-    // size_t column = 0;
-
     cout << "\nIndex\t"
          << "Key\t"
          << "Probes\t" << endl;
