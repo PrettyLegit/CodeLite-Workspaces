@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Session Name="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\CodeLite Workspaces.workspace">
+<Session Name="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace">
   <int Value="0" Name="m_selectedTab"/>
-  <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\CodeLite Workspaces.workspace" Name="m_workspaceName"/>
+  <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
-      <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\A11_Hash_Tables\hashFunctions.cpp" Name="FileName"/>
-      <int Value="133" Name="FirstVisibleLine"/>
-      <int Value="86" Name="CurrentLine"/>
+      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A11_Hash_Tables\hashFunctions.cpp" Name="FileName"/>
+      <int Value="141" Name="FirstVisibleLine"/>
+      <int Value="157" Name="CurrentLine"/>
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
@@ -25,7 +25,7 @@
       <bool Value="0" Name="regex"/>
       <bool Value="0" Name="is_temp"/>
       <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
+      <long Value="0" Name="ignore_number"/>
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
@@ -41,7 +41,7 @@
       <bool Value="0" Name="regex"/>
       <bool Value="0" Name="is_temp"/>
       <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
+      <long Value="0" Name="ignore_number"/>
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
@@ -57,7 +57,7 @@
       <bool Value="0" Name="regex"/>
       <bool Value="0" Name="is_temp"/>
       <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
+      <long Value="0" Name="ignore_number"/>
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
@@ -73,7 +73,7 @@
       <bool Value="0" Name="regex"/>
       <bool Value="0" Name="is_temp"/>
       <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
+      <long Value="0" Name="ignore_number"/>
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
@@ -89,7 +89,7 @@
       <bool Value="0" Name="regex"/>
       <bool Value="0" Name="is_temp"/>
       <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
+      <long Value="0" Name="ignore_number"/>
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
@@ -105,7 +105,7 @@
       <bool Value="0" Name="regex"/>
       <bool Value="0" Name="is_temp"/>
       <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
+      <long Value="0" Name="ignore_number"/>
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
@@ -121,10 +121,10 @@
       <bool Value="0" Name="regex"/>
       <bool Value="0" Name="is_temp"/>
       <bool Value="1" Name="is_enabled"/>
-      <int Value="0" Name="ignore_number"/>
+      <long Value="0" Name="ignore_number"/>
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
   </SerializedObject>
-  <wxString Value="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.inc;*.mm;*.m;*.xrc;*.plist;*.txt" Name="m_findInFilesMask"/>
+  <wxString Value="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.inc;*.mm;*.m;*.xrc;*.xml;*.json;*.sql;*.txt;*.plist;CMakeLists.txt;*.rc;*.iss" Name="m_findInFilesMask"/>
 </Session>
