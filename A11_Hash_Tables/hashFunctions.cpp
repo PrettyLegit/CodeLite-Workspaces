@@ -141,24 +141,25 @@ void hash2(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
 	    probe = hash_value;
 	    isVacant = true;
 		
-	    while(isVacant) {
-			
-		// if he probe has reach the end of the Table, then start the probe at index 0
-		if(probe > CAPACITY_X) {
-		    probe = probe % CAPACITY_X; 
-			//cout << "PROBE" << probe << endl;
-		}
-			
-		if(Table[probe][0] == -1) {
-		    Table[probe][0] = keys[current];
-			Table[probe][1] = probe_counter;
-		    isVacant = false;
-		}else
+	    while(isVacant) 
 		{
-			probe_counter++;
-			probe = probe + (probe_counter*probe_counter);
-			cout << "PROBE" << probe << endl;
-		}
+			// if he probe has reach the end of the Table, then start the probe at index 0
+			if(probe > CAPACITY_X) {
+				probe = probe % CAPACITY_X; 
+				//cout << "PROBE" << probe << endl;
+			}
+				
+			if(Table[probe][0] == -1) {
+				Table[probe][0] = keys[current];
+				Table[probe][1] = probe_counter;
+				isVacant = false;
+			}else
+			{
+				probe_counter++;
+				probe = probe + (probe_counter*probe_counter);
+				cout << "PROBE" << probe << endl;
+			}
+			
 	    }
 	}
 	current++;
