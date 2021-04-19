@@ -17,9 +17,9 @@ using namespace std;
 // prototypes
 void print_menu();
 char get_command();
-void hash1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
-void hash2(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
-void hash3(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
+void HF1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
+void HF2(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
+void HF3(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y);
 void intialize_empty_table(int Table[50][2]);
 void print_table(int Table[50][2], size_t const CAPACITY_X, size_t const CAPACITY_Y);
 void sumProbes(int Table[50][2], size_t const CAPACITY_X);
@@ -41,21 +41,21 @@ int main()
 
 	if(command == '1') {
 	    intialize_empty_table(Table);
-	    hash1(keys, Table, CAPACITY_X, CAPACITY_Y);
+	    HF1(keys, Table, CAPACITY_X, CAPACITY_Y);
 	    print_table(Table, CAPACITY_X, CAPACITY_Y);
 	    sumProbes(Table, CAPACITY_X);
 	}
 
 	if(command == '2') {
 		intialize_empty_table(Table);
-		hash2(keys, Table, CAPACITY_X, CAPACITY_Y);
+		HF2(keys, Table, CAPACITY_X, CAPACITY_Y);
 		print_table(Table, CAPACITY_X, CAPACITY_Y);
 	    sumProbes(Table, CAPACITY_X);
 	}
 
 	if(command == '3') {
 		intialize_empty_table(Table);
-		hash3(keys, Table, CAPACITY_X, CAPACITY_Y);
+		HF3(keys, Table, CAPACITY_X, CAPACITY_Y);
 		print_table(Table, CAPACITY_X, CAPACITY_Y);
 	    sumProbes(Table, CAPACITY_X);
 	}
@@ -63,7 +63,7 @@ int main()
     return EXIT_SUCCESS;
 }
 
-void hash1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
+void HF1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
 {
     size_t hash_value = 0;
     int key_value = 0;
@@ -113,7 +113,7 @@ void hash1(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
 	}
 }
 
-void hash2(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y){
+void HF2(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y){
 	
 	size_t hash_value = 0;
     int key_value = 0;
@@ -164,7 +164,7 @@ void hash2(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
     }
 }
 
-void hash3(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
+void HF3(int keys[50], int Table[50][2], size_t CAPACITY_X, size_t CAPACITY_Y)
 {
     size_t hash_value = 0;
     int key_value = 0;
