@@ -16,14 +16,23 @@ using namespace std;
 
 int main(){
 	
-	int row_input;
-	int column_input;
+	int node_number = 4;
 	
-	int **graph;
+	//int **graph;
 	
+	cout << "Input node number" << endl;
+	//cin >> matrix_size;
 	
+	int graph[node_number][node_number];
 	
+	for(int row = 0; row < node_number; row++){
+		for(int column = 0; column < node_number; column++){
+			cout << "Enter A1 [";
+		}
+	}
 	
 	return EXIT_SUCCESS;
 }
+
+
 
