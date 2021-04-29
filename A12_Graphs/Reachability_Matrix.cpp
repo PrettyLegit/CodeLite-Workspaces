@@ -23,12 +23,18 @@ void print_4x4_matrix(int matrix[4][4]);
 int main(){
 	
 	char command;
-	int node_number = 2;
-	
-	
+	int node_number;
 	int user_input;
+	
+	do{
+		
+		printMenu();
+		command = get_command;
+		
+	}while(command != '0');
+	
 	cout << "Input node number" << endl;
-	//cin >> matrix_size;
+	//cin >> node_number
 	
 	int input_matrix[node_number][node_number];
 	
@@ -176,5 +182,5 @@ void print_2x2_matrix(int A2_matrix[2][2]){
 		}
 		cout << endl;
 		}
-}
+}+++
 
