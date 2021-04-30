@@ -173,15 +173,6 @@ int main()
 				}
 				cout << "Total number of paths of length 1 edge: " << path_length_1 << endl;
 				
-//				//Total number of paths of length 1 edge: 
-//				int path_length_1 = 0;
-//				for(int row = 0; row < node_number; row++){
-//					for(int column = 0; column < node_number; column++){
-//						path_length_1 += A1_matrix[row][column];
-//					}
-//				}
-//				cout << "Total number of paths of length 1 edges: " << path_length_1 << endl;
-				
 				//Total number of paths of length 1 to 1 edges: 
 				int path_length_1to1 = 0;
 				for(int row = 0; row < node_number; row++){
