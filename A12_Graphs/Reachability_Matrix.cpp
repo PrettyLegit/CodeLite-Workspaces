@@ -36,13 +36,14 @@ int main()
 			
 			do {
 				cout << "Choose a the following node options." << endl;
+				cout << "1. for a graph with one node." << endl;
 				cout << "2. for a graph with two nodes." << endl;
 				cout << "3. for a graph with three nodes." << endl;
 				cout << "4. for a graph with four nodes." << endl;
 				cout << "5. for a graph with five nodes." << endl;
 				cin >> node_number;
 
-				if(node_number != 2 && node_number != 3 && node_number != 4 && node_number != 5) 
+				if(node_number != 1 && node_number != 2 && node_number != 3 && node_number != 4 && node_number != 5) 
 				{
 					cout << "\nInvalid selection, try again.\n" << endl;
 					node_number = -1;
@@ -76,7 +77,131 @@ int main()
 		}
 		if(command == '2') {
 			
-			//int reachability_matrix[node_number][node_number];
+			if(node_number == 1) {
+				int boundary_row = 0;
+				int boundary_column = 0;
+				int A1_matrix[1][1];
+				// A1_matrix will copy input_matrix
+				for(int row = 0; row < node_number; row++) {
+					for(int column = 0; column < node_number; column++) {
+						A1_matrix[row][column] = input_matrix[row][column];
+					}
+				}
+				//setting reachability_matrix will 0's
+				for(int row = 0; row < node_number; row++) {
+					for(int column = 0; column < node_number; column++) {
+						reachability_matrix[row][column] = 0;
+					}
+				}
+				
+				//adding A1_matrix to reachability_matrix
+				for(int row = 0; row < node_number; row++){
+					for(int column = 0; column < node_number; column++){
+						reachability_matrix[row][column] += A1_matrix[row][column];
+					}
+				}
+				/*printing/calcuting outputs
+				 * 
+				 * */
+				//Input Matrix:
+				cout<< endl;
+				cout << "Input Matrix:" << endl;
+				for(int row = 0; row < node_number; row++){
+					for(int column = 0; column < node_number; column++){
+						cout << input_matrix[row][column] << "\t";
+					}
+					cout << endl;
+				}
+				
+				//Reachability Matrix:
+				cout<< endl;
+				cout << "Reachability Matrix:" << endl;
+				for(int row = 0; row < node_number; row++){
+					for(int column = 0; column < node_number; column++){
+						cout << reachability_matrix[row][column] << "\t";
+					}
+					cout << endl;
+				}
+				
+				//In Degrees:
+				int node1_in_degree = 0; //node 1 is in the zero index in the 2D array
+				cout<< endl;
+				cout << "Out-degrees:" << endl;
+				for(int row = 0; row < node_number; row++){
+						node1_in_degree += A1_matrix[row][0];
+				}
+				cout << "Node 1 in-degree is " << node1_in_degree << endl;
+				
+				//Out-Degrees:
+				int node1_out_degree = 0; //node 1 is in the zero index in the 2D array
+				cout<< endl;
+				cout << "In-degrees:" << endl;
+				for(int column = 0; column < node_number; column++){
+					node1_out_degree += A1_matrix[0][column];
+				}
+				cout << "Node 1 in-degree is " << node1_out_degree << endl;
+				
+				//Total Number of self-loops:
+				int self_loops = 0;
+				cout << endl;
+				for(int row = 0; row < node_number; row++){
+					for(int column = 0; column < node_number; column++){
+						if(row == column){
+							self_loops += A1_matrix[row][column];
+						}
+					}
+				}
+				cout << "Total number of self-loops: " << self_loops << endl;
+				
+				//Total number of cycles of length 1 edges: 
+				int cycle_length_1 = 0;
+				for(int row = 0; row < node_number; row++){
+					for(int column = 0; column < node_number; column++){
+						if(row == column){
+							cycle_length_1 += A1_matrix[row][column];
+						}
+					}
+				}
+				cout << "Total number of cycles of length 1 edges: " << cycle_length_1 << endl;
+				
+				//Total number of paths of length 1 edge: 
+				int path_length_1 = 0;
+				for(int row = 0; row < node_number; row++){
+					for(int column = 0; column < node_number; column++){
+						path_length_1 += A1_matrix[row][column];
+					}
+				}
+				cout << "Total number of paths of length 1 edge: " << path_length_1 << endl;
+				
+//				//Total number of paths of length 1 edge: 
+//				int path_length_1 = 0;
+//				for(int row = 0; row < node_number; row++){
+//					for(int column = 0; column < node_number; column++){
+//						path_length_1 += A1_matrix[row][column];
+//					}
+//				}
+//				cout << "Total number of paths of length 1 edges: " << path_length_1 << endl;
+				
+				//Total number of paths of length 1 to 1 edges: 
+				int path_length_1to1 = 0;
+				for(int row = 0; row < node_number; row++){
+					for(int column = 0; column < node_number; column++){
+						path_length_1to1 += reachability_matrix[row][column];
+					}
+				}
+				cout << "Total number of paths of length 1 to 1 edges: " << path_length_1to1 << endl;
+				
+				//Total number of cycles of length 1 to 2 edges: 
+				int cycles_length_1to1 = 0;
+				for(int row = 0; row < node_number; row++){
+					for(int column = 0; column < node_number; column++){
+						if(row == column){
+							cycles_length_1to1 += reachability_matrix[row][column];
+						}
+					}
+				}
+				cout << "Total number of cycles of length 1 to 1 edges: " << cycles_length_1to1 << endl;
+			}
 			
 			if(node_number == 2) {
 				int boundary_row = 0;
@@ -882,6 +1007,11 @@ int main()
 		}
 	} while(command != '0');
 
+	//ALL THIS GARBAGE. MEMORY LEAK BE GONE
+	for(int i = 0; i < node_number; i++){
+		delete input_matrix[i];
+		delete reachability_matrix[i];
+	}
     return EXIT_SUCCESS;
 }
 

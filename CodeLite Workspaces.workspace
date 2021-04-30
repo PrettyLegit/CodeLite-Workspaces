@@ -25,6 +25,7 @@
   <Project Name="A12_Graphs" Path="A12_Graphs/A12_Graphs.project" Active="Yes"/>
   <Project Name="z_LB_a11" Path="z_LB_a11/z_LB_a11.project" Active="No"/>
   <Project Name="z_AI_a11" Path="z_AI_a11/z_AI_a11.project" Active="No"/>
+  <Project Name="z_testing_A12_tutor" Path="z_testing_A12_tutor/z_testing_A12_tutor.project" Active="No"/>
   <BuildMatrix>
     <WorkspaceConfiguration Name="Debug" Selected="yes">
       <Environment/>
@@ -59,6 +60,7 @@
       <Project Name="A12_Graphs" ConfigName="Debug"/>
       <Project Name="z_LB_a11" ConfigName="Debug"/>
       <Project Name="z_AI_a11" ConfigName="Debug"/>
+      <Project Name="z_testing_A12_tutor" ConfigName="Debug"/>
     </WorkspaceConfiguration>
     <WorkspaceConfiguration Name="Release" Selected="yes">
       <Environment/>
@@ -93,6 +95,7 @@
       <Project Name="A12_Graphs" ConfigName="Release"/>
       <Project Name="z_LB_a11" ConfigName="Release"/>
       <Project Name="z_AI_a11" ConfigName="Release"/>
+      <Project Name="z_testing_A12_tutor" ConfigName="Release"/>
     </WorkspaceConfiguration>
   </BuildMatrix>
 </CodeLite_Workspace>
