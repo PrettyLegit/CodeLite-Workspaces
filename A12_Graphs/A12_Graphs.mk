@@ -5,8 +5,8 @@
 ## Debug
 ProjectName            :=A12_Graphs
 ConfigurationName      :=Debug
-WorkspacePath          :=C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces
-ProjectPath            :=C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces/A12_Graphs
+WorkspacePath          :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces"
+ProjectPath            :="C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A12_Graphs"
 IntermediateDirectory  :=$(ConfigurationName)
 OutDir                 := $(IntermediateDirectory)
 CurrentFileName        :=
@@ -95,7 +95,7 @@ PreBuild:
 ##
 $(IntermediateDirectory)/Reachability_Matrix.cpp$(ObjectSuffix): Reachability_Matrix.cpp
 	@$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) -MG -MP -MT$(IntermediateDirectory)/Reachability_Matrix.cpp$(ObjectSuffix) -MF$(IntermediateDirectory)/Reachability_Matrix.cpp$(DependSuffix) -MM Reachability_Matrix.cpp
-	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/OneDrive/Documents/GitHub/CodeLite-Workspaces/A12_Graphs/Reachability_Matrix.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Reachability_Matrix.cpp$(ObjectSuffix) $(IncludePath)
+	$(CXX) $(IncludePCH) $(SourceSwitch) "C:/Users/Jimmy/Documents/GitHub/CodeLite Workspaces/A12_Graphs/Reachability_Matrix.cpp" $(CXXFLAGS) $(ObjectSwitch)$(IntermediateDirectory)/Reachability_Matrix.cpp$(ObjectSuffix) $(IncludePath)
 $(IntermediateDirectory)/Reachability_Matrix.cpp$(PreprocessSuffix): Reachability_Matrix.cpp
 	$(CXX) $(CXXFLAGS) $(IncludePCH) $(IncludePath) $(PreprocessOnlySwitch) $(OutputSwitch) $(IntermediateDirectory)/Reachability_Matrix.cpp$(PreprocessSuffix) Reachability_Matrix.cpp
 
