@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Session Name="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace">
-  <int Value="0" Name="m_selectedTab"/>
+  <int Value="2" Name="m_selectedTab"/>
   <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\CodeLite Workspaces.workspace" Name="m_workspaceName"/>
   <TabInfoArray Name="TabInfoArray">
     <TabInfo>
@@ -17,26 +17,17 @@
       <wxArrayString Name="Bookmarks"/>
       <IntVector Name="CollapsedFolds"/>
     </TabInfo>
+    <TabInfo>
+      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A11_Hash_Tables\hashFunctions.cpp" Name="FileName"/>
+      <int Value="196" Name="FirstVisibleLine"/>
+      <int Value="6" Name="CurrentLine"/>
+      <wxArrayString Name="Bookmarks"/>
+      <IntVector Name="CollapsedFolds"/>
+    </TabInfo>
   </TabInfoArray>
   <SerializedObject Name="m_breakpoints">
-    <long Value="8" Name="Count"/>
+    <long Value="7" Name="Count"/>
     <SerializedObject Name="Breakpoint0">
-      <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\A11_Hash_Tables\hashFunctions.cpp" Name="file"/>
-      <int Value="188" Name="lineno"/>
-      <wxString Value="" Name="function_name"/>
-      <wxString Value="" Name="memory_address"/>
-      <int Value="1" Name="bp_type"/>
-      <int Value="0" Name="watchpoint_type"/>
-      <wxString Value="" Name="watchpt_data"/>
-      <CData Name="commandlist"/>
-      <bool Value="0" Name="regex"/>
-      <bool Value="0" Name="is_temp"/>
-      <bool Value="1" Name="is_enabled"/>
-      <long Value="0" Name="ignore_number"/>
-      <wxString Value="" Name="conditions"/>
-      <int Value="0" Name="origin"/>
-    </SerializedObject>
-    <SerializedObject Name="Breakpoint1">
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\z_testing_alex_a10\testPQH.cpp" Name="file"/>
       <int Value="47" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -52,7 +43,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint2">
+    <SerializedObject Name="Breakpoint1">
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\z_testing_alex_a10\testPQH.cpp" Name="file"/>
       <int Value="48" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -68,7 +59,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint3">
+    <SerializedObject Name="Breakpoint2">
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\z_testing_alex_a10\testPQH.cpp" Name="file"/>
       <int Value="49" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -84,7 +75,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint4">
+    <SerializedObject Name="Breakpoint3">
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\z_testing_alex_a10\testPQH.cpp" Name="file"/>
       <int Value="50" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -100,7 +91,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint5">
+    <SerializedObject Name="Breakpoint4">
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\z_testing_alex_a10\testPQH.cpp" Name="file"/>
       <int Value="51" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -116,7 +107,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint6">
+    <SerializedObject Name="Breakpoint5">
       <wxString Value="C:\Users\Jimmy\Documents\GitHub\CodeLite Workspaces\z_testing_alex_a10\testPQH.cpp" Name="file"/>
       <int Value="52" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
@@ -132,7 +123,7 @@
       <wxString Value="" Name="conditions"/>
       <int Value="0" Name="origin"/>
     </SerializedObject>
-    <SerializedObject Name="Breakpoint7">
+    <SerializedObject Name="Breakpoint6">
       <wxString Value="C:\Users\Jimmy\OneDrive\Documents\GitHub\CodeLite-Workspaces\A9_Part0_Trees\testBST.cpp" Name="file"/>
       <int Value="31" Name="lineno"/>
       <wxString Value="" Name="function_name"/>
